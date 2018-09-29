@@ -12,7 +12,8 @@ resource "digitalocean_droplet" "trtldmn1" {
   size = "1gb"
   ssh_keys = ["43:68:ff:14:66:20:d0:e3:cd:89:09:a2:51:71:98:74"]
   provisioner "remote-exec" {
-    inline = [ "apt-get -y update && apt-get install -y python-minimal python-pip && pip install 'docker-py>=1.7.0' 'docker-compose>=1.7.0'" ]
+   inline = [ "apt-get -y update && apt-get install -y python-minimal python-pip && pip install docker" ]
+# REMOVED python-pip && pip install 'docker-py>=1.7.0' 'docker-compose>=1.7.0' pip install docker
     connection {
       type = "ssh"
       user = "root"
