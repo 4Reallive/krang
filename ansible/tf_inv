@@ -1,0 +1,15 @@
+[trtldmn1.0]
+142.93.115.253
+
+[type_digitalocean_droplet]
+142.93.115.253
+
+[all]
+142.93.115.253
+
+[all:vars]
+address_web=142.93.115.253
+
+[trtldmn1]
+142.93.115.253
+

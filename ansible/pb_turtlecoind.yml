@@ -1,0 +1,10 @@
+---
+- hosts: trtldmn1
+  gather_facts: false
+  tasks:
+  - name: Start the TRTL1 daemon
+    docker_container:
+      name: 'TRTLnode1'
+      image: '4reallive/turtlecoind'
+      state: 'started'
+

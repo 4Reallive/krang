@@ -1,0 +1,7 @@
+debian-stretch-slim-rootfs*
+blocks.tar.xz
+*/secret.auto.tfvars
+*/terraform.tfstate
+*/terraform.tfstate.backup
+*/.terraform
+*.retry
